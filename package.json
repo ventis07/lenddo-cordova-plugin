@@ -1,0 +1,25 @@
+{
+  "name": "lenndo-cordova-plugin",
+  "version": "1.1.0",
+  "description": "LenddoSDK Cordova Plugin",
+  "cordova": {
+    "id": "lenndo-cordova-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ventis07/lenddo-cordova-plugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Lanre Makinde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ventis07/lenddo-cordova-plugin/issues"
+  },
+  "homepage": "https://github.com/ventis07/lenddo-cordova-plugin#readme"
+}
