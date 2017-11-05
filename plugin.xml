@@ -1,2 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="lenndo-cordova-plugin" version="1.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>LenddoMatware</name><js-module name="LenddoMatware" src="www/LenddoMatware.js"><clobbers target="cordova.plugins.LenddoMatware" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="LenddoMatware"><param name="android-package" value="lenndo-cordova-plugin.LenddoMatware" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/LenddoMatware.java" target-dir="src/lenndo-cordova-plugin/LenddoMatware" /></platform></plugin>
+<plugin id="lenndo-cordova-plugin" 
+    version="1.1.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>LenddoMatware</name>
+    <js-module name="LenddoMatware" src="www/LenddoMatware.js">
+        <clobbers target="cordova.plugins.LenddoMatware" />
+    </js-module>
+    <platform name="android">
+        <preference name="PARTNER_SCRIPT_ID" />
+        <preference name="PARTNER_API_SECRET" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="LenddoMatware">
+                <param name="android-package" value="com.omomatwatwares.lenddocordova.LenddoMatware" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <meta-data android:name="com.lenddo.sdk..partnerScriptId" android:value="$PARTNER_SCRIPT_ID"/>
+            <meta-data android:name="com.lenddo.sdk..partnerApiSecret" android:value="$PARTNER_API_SECRET"/>
+        </config-file>
+        <source-file src="src/android/LenddoMatware.java" target-dir="src/com/omomatwatwares/lenddocordova/LenddoMatware" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>

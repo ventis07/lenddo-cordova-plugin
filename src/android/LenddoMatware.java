@@ -1,4 +1,4 @@
-package lenndo-cordova-plugin;
+package com.omomatwatwares.lenddocordova;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
